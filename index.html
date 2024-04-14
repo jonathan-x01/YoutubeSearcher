@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Youtube Search</title>
+	  <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/ca54e1bd/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="include/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Misc/context_menu/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <script src='https://kit.fontawesome.com/5a06c82cf3.js'></script>
+    <script type="text/javascript" src="include/plugins/jquery-3.6.0/jquery.min.js"></script>
+  </head>
+  <body context-menu-data='{"contextmenu":true}'>
+    <div class="nav">
+      <button class="nav-btn settings-btn" onclick="alert('Work in progress')"><i class='fas fa-cog'></i></button>
+      <button class="nav-btn settings-btn" onclick="main.accessFrame('help')"><i class='fas fa-exclamation-circle'></i></button>
+      <button class="nav-btn filter-btn" onclick="alert('Coming Soon!')"><i class='fas fa-filter'></i></button>
+    </div>
+
+    <div class="modal">
+      <div class="frame">
+        <iframe id="iframe"></iframe>
+      </div>
+      <div class="footer">
+        <div id="modal-custom" tabindex="0" class="modal-btn modal-custom modal-tabindex right" onclick="main.closeFrame()">Save</div>
+        <div id="modal-close" tabindex="0" class="modal-btn modal-close modal-tabindex right" onclick="main.closeFrame()">Close</div>
+        <div id="modal-reload" tabindex="0" class="modal-btn modal-reload modal-tabindex left" style="width:3%"><i class="fa fa-refresh"></i></div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="outer-logo-image">
+        <div class="logo-image"><img class="inner-logo-image" id="logo-img" src=""></div>
+      </div>
+      <div class="outer-form-fields">
+        <div class="form-fields">
+          <input class="inner-fields" autocomplete="off" id="search" type="text" name="fname" id="search" placeholder="Search Youtube">
+          <div class="clear-btn inner-fields" onclick="ClearText()">X</div>
+          <div tabindex="0" class="submit-btn main-tabindex inner-fields" onclick="Click('assign')" id="search_btn" placeholder="Search">Search</div>
+        </div>
+        <div style="display:none" class="autocomplete" id="auto-complete"></div>
+        <div style="display:none" class="input-error-message"></div>
+      </div>
+      </div>
+
+    <ul class="context-menu">
+      <li id="context-menu-open" onclick="Click('assign')"><span class="checkbox-spacer"></span>Open</li>
+      <li id="context-menu-new-tab" onclick="Click('newtab');"><span class="checkbox-spacer"></span>Open in new tab</li>
+      <hr>
+      <li id="context-menu-autologin"><input type="checkbox" id="context-menu-autologin-input" checked>Auto Login</li>
+      <hr>
+      <li onclick="main.accessFrame('help')"><span class="checkbox-spacer"></span>Help</li>
+      <li onclick="alert('Work in progress')"><span class="checkbox-spacer"></span>Settings</li>
+    </ul>
+
+    <div tabindex="0" title="Origin Logo Image" class="origin-pre origin-lg main-tabindex"></div>
+    <div tabindex="0" title="Origin Background Image" class="origin-pre origin-bg main-tabindex"></div>
+
+    <script type="text/javascript" src="../../Misc/context_menu/script.js"></script>
+    <script type="text/javascript" src="include/settings.js"></script>
+    <script type="text/javascript" src="include/core.js"></script>
+    <script type="text/javascript" src="include/styleChanger.js"></script>
+    <script type="text/javascript" src="include/autoComplete.js"></script>
+    <script type="text/javascript" src="include/resetView.js"></script>
+  </body>
+</html>
