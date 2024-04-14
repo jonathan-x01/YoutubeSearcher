@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="frames.css">
+    <link rel="stylesheet" href="settings.css">
+  </head>
+  <body>
+    <div class="drop-down-box">
+      <div class="drop-down-header">General</div>
+      <div class="drop-down-content">
+        <div class="drop-down-content-inner">
+          <label for="auto-account-login">Enable Auto-login</label>
+          <input id="auto-account-login" type="checkbox" name="auto-login-page" checked="true">
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-down-box">
+      <div class="drop-down-header">Translation & Design</div>
+      <div class="drop-down-content">
+        <div class="drop-down-content-inner">
+          <div class="form-line"><p>Search Input Placeholder:</p><input type="text" name="search-youtube-text" placeholder="Search Youtube"></div>
+          <hr>
+          <div class="form-line"><p>Search Text:</p><input type="text" name="search-text" placeholder="Search"></div>
+          <hr>
+          <div class="form-group">
+            <table>
+              <tr>
+                <td colspan="2"><p class="title">Background Image:</p></td>
+              </tr>
+              <tr>
+                <td><label for="background-url">Url</label></td>
+                <td><input type="text" name="background-url"><br></td>
+              </tr>
+              <tr>
+                <td><label for="background-upload">Upload</label></td>
+                <td><input type="file" name="background-upload" id="bg_file_upload"></td>
+                <button type="button" name="button" id="btn_test">Test</button>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-down-box">
+      <div class="drop-down-header">Import/Export</div>
+      <div class="drop-down-content">
+        <div class="drop-down-content-inner">
+          <div class="btn" id="download_settings_json"><a id="download_linl">Export</a></div>
+          <div style="border:1px solid black;display:inline-block;padding:3px;">
+            <input type="file" name="upload-settings" id="upload_settings" accept="application/json">
+            <div class="btn" id="import_settings_json" style="margin:0">Import</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../settings.js"></script>
+  <script type="text/javascript" src="util.js"></script>
+  <script type="text/javascript" src="settings.js"></script>
+</html>

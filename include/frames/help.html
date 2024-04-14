@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="frames.css">
+    <style>
+      fieldset {
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+
+      fieldset legend {
+        font-size: 2em;
+      }
+
+      fieldset > fieldset {
+        font-size: 15px;;
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
+
+      fieldset > fieldset legend {
+        font-size: 1.17em;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Info</legend>
+      <p>The Youtube Search is a simple web application that allows the user to easily search on youtube without the distractions. It is highly recommended to bookmark this page to your bookmark bar as an easier way to access this.</p>
+      <p><b style="color:red;font-weight:bold">Notice: </b>Youtube Search is also best used on a PC or anything with a keyboard to help the experience as this is made for any device connected<br>
+      to a keyboard</p>
+      <fieldset>
+        <legend>Shortcut Keys</legend>
+        <p><kbd>ENTER</kbd> - Search youtube in current tab</p>
+        <p><span class="skb"><kbd>CTRL</kbd> + <kbd>ENTER</kbd></span> - Search youtube from a new tab</p>
+        <p><kbd>Esc</kbd> - Clears the input text</p>
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend>Help</legend>
+      <p><b>Just Keywords:</b> Type in any text into the input field to search for anything on youtube. <b>Example: cookies</b></p>
+      <p><b>Links:</b> You can also put in video links to pop up a new window of a partially fullscreen video. <b>Example: https://www.youtube.com/watch?v=MZuSdE9fzvs</b></p>
+      <p><b>Playlists:</b> You can also do playlists as well. Just copy and paste the urls from a playlist into the search <b>Example: https://www.youtube.com/watch?v=feSnyAkUo98&list=PLN_hC9GPyuczDiuTyTBSTBggFXj4ofDl4&ab_channel=CamodoGaming</b></p>
+      <p><b>Short Urls:</b> You can also use the youtube short url format as well <b>Example: https://youtu.be/MZuSdE9fzvs</b></p>
+    </fieldset>
+    <fieldset>
+      <legend>Credits</legend>
+      <p><b style="font-size:21px;margin-right:5px;">Creator:</b> Jonathan J. Pecany</p>
+    </fieldset>
+    <fieldset>
+      <legend>Dates:</legend>
+      <p><b>Created:</b> May 16th 2020</p>
+      <p><b>Release:</b> Still in Beta</p>
+      <p><b>Update (5/28/2021):</b> Added autocomplete that is from youtube, as well as set some settings. Parts still not done, but most of it is functional.</p>
+      <p><b>Update (12/29/2021):</b> Fixed border radius bug with autocorrect. Also added a context menu with shortcut keys to make it more diverse.</p>
+      <p><b>Update (03/24/2022):</b> Fixed error reporting frame. Fixed autocomplete frame. Some settings finally implemented</p>
+    </fieldset>
+    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        API.saveButton.style("display","none");
+      }
+    </script>
+  </body>
+</html>

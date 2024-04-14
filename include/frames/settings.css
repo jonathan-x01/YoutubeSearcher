@@ -1,0 +1,75 @@
+/* Drop-Down Styles */
+.drop-down-box {
+  background: rgb(32 32 32);
+  height: 20%;
+  margin-bottom: 10px;
+}
+.drop-down-box .drop-down-header {
+  background: black;
+  height: 5%;
+  padding: 10px;
+}
+
+.drop-down-box .drop-down-header:hover {cursor: pointer;}
+.drop-down-header i {margin-right: 2px;}
+.drop-down-box .drop-down-content {overflow: hidden;}
+.drop-down-box .drop-down-content .drop-down-content-inner {margin: 10px;}
+
+.drop-down-content-inner hr {
+  --hr-margin-: 20px;
+  margin-top: var(--hr-margin-);
+  margin-bottom: var(--hr-margin-);
+  border-color: grey;
+}
+
+/* Form Styles */
+.form-line:last-child {
+  margin-bottom: 30px;
+}
+
+.form-line *  {
+  display: inline;
+}
+
+.form-line p, .title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.title {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.form-line input {
+  float: right;
+  background-color: rgb(0,0,0,0.5);
+  border: none;
+  width: calc(70% - 5px);
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px;
+  margin: 2px;
+  display: inline-block;
+  font-size: 18px;
+  background: black;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Upload Settings */
+[name=upload-settings]{
+  padding: 10px;
+  background: black;
+}
